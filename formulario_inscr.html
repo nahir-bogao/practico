@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario de Registro</title>
+</head>
+<header>
+    <div class="container">
+        <p class="logo">GuillePrograma!</p>
+        <nav>
+            <a href="#somos-guillepro">Sobre Nosotros</a>
+            <a href="#nuestros-programas">Nuestros Programas</a>
+            <a href="#caracteristicas">Caracteristicas</a>
+        </nav>
+    </div>
+</header>
+<body>
+    <h1>Formulario de Registro</h1>
+    <p>Por favor llene todos los campos con los datos requeridos</p>
+    <form action='https://google.com'>
+     <fieldset>
+        <label for="nombre">Ingrese su Nombre: <input id="nombre" type="text" required></input></label>
+        <label for="apellido">Ingrese su Apellido: <input id="apellido" type="text" required></input></label>
+        <label for="email">Ingrese su Email: <input id="email" type="email" required></input></label>
+        <label for="password">Creé su Password: <input id="password" type="password" pattern="[a-z0-9]{8,}" required ></input></label>
+     </fieldset>
+     <fieldset>
+        <label for="cuenta-personal"><input class="inline" type="radio" name="tipo-cuenta" id="cuenta-personal"/>Cuenta Personal</label>
+        <label for="cuenta-negocios"><input class="inline" type="radio" name="tipo-cuenta" id="cuenta-negocios"/>Cuenta de Negocios</label>
+        <label for="terminos"><input class="inline" type="checkbox" required id="terminos"/>Acepto los <a href="https://blank">terminos y condiciones</a></label>
+     </fieldset>
+     <fieldset>
+        <label for="foto-perfil">Cargue su foto de perfil: <input type="file" id="foto-perfil" name="foto-perfil" /></label>
+        <label for="edad">Ingrese su edad (años): <input type="number" min="12" max="120" id="edad" name="edad"></label>
+        <label for="referencia">Como nos conociste? <select id="referencia" name="referencia">
+            <option value="">(seleccione)</option>
+            <option value="1">TV</option>
+            <option value="2">Radio</option>
+            <option value="3">Web</option>
+            <option value="4">Otro</option>
+        </select></label>
+        <label for="bio">Escriba su Biografia: <textarea rows="3" cols="30" id="bio" placeholder="GuillePrograma!" name="bio"></textarea></label>
+     </fieldset>
+     <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
